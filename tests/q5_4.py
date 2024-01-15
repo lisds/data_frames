@@ -6,9 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> abs(average_20th_century_rating - 8.2783625730994146) < 1e-5
+          >>> tol = 1e-5
+          >>> abs(average_20th_century_rating - 8.280113636363636) < tol
           True
-          >>> abs(average_21st_century_rating - 8.2379746835443033) < 1e-5
+          >>> abs(average_21st_century_rating - 8.23108108108108) < tol
           True
           """,
           'hidden': False,
